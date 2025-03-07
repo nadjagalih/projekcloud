@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggota Kelompok 5</title>
+
+    <!-- FontAwesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Gaya Umum */
+        body { 
+            font-family: 'Arial', sans-serif; 
+            text-align: center; 
+            margin: 50px; 
+            background-color: #121212; 
+            color: #ffffff; 
+        }
+        h1 { 
+            color: #ff3333; 
+            font-size: 28px;
+        }
+
+        /* Container untuk daftar anggota */
+        .anggota-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+
+        /* Kartu Anggota */
+        .anggota { 
+            width: 250px; 
+            padding: 15px; 
+            background: #1e1e1e; 
+            border-radius: 10px; 
+            text-align: center; 
+            box-shadow: 0px 4px 10px rgba(255, 51, 51, 0.5); 
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Efek Hover */
+        .anggota:hover { 
+            transform: scale(1.05);
+            background: #ff3333; 
+            color: #121212; 
+        }
+
+        /* Foto Profil */
+        img { 
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid #ff3333; 
+        }
+
+        /* Nama Anggota */
+        h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* NIM */
+        p {
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+
+        /* Warna teks berubah saat hover */
+        .anggota:hover p {
+            color: #121212;
+        }
+
+        /* Menu Sosial Media */
+        .social-links {
+            display: none; /* Awalnya tersembunyi */
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: #ff3333;
+            font-size: 20px;
+            margin: 0 8px;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        /* Warna ikon berubah menjadi hitam saat hover */
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #000000; /* Hitam saat hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Anggota Kelompok 5</h1>
+    <div class="anggota-container">
+        <div class="anggota" onclick="toggleSocial(1)">
+            <img src="foto1.jpg" alt="Anggota 1">
+            <h3>Achmad Ilham Nafi' P. F.</h3>
+            <p>233140707111080</p>
+            <div class="social-links" id="social1">
+                <a href="https://www.instagram.com/napeeek_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ilham-nafi-209a31242/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@napeeek__" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="anggota" onclick="toggleSocial(2)">
+            <img src="foto2.jpg" alt="Anggota 2">
+            <h3>Jalu Gusman</h3>
+            <p>233140707111083</p>
+            <div class="social-links" id="social2">
+                <a href="https://www.instagram.com/jalu_gusman/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jalugusman" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@jalugusman" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="anggota" onclick="toggleSocial(3)">
+            <img src="foto3.jpg" alt="Anggota 3">
+            <h3>M. Farhan Romadon</h3>
+            <p>233140707111094</p>
+            <div class="social-links" id="social3">
+                <a href="https://www.instagram.com/farhanromadon/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/farhanromadon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@farhanromadon" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="anggota" onclick="toggleSocial(4)">
+            <img src="foto4.jpg" alt="Anggota 4">
+            <h3>M. Risqullah A.</h3>
+            <p>233140707111099</p>
+            <div class="social-links" id="social4">
+                <a href="https://www.instagram.com/risqullah_a/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/risqullah" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@risqullah" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="anggota" onclick="toggleSocial(5)">
+            <img src="foto5.jpg" alt="Anggota 5">
+            <h3>Nadja Galih F.</h3>
+            <p>233140707111100</p>
+            <div class="social-links" id="social5">
+                <a href="https://www.instagram.com/nadjagalih/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nadjagalih" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@nadjagalih" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSocial(id) {
+            var socialMenu = document.getElementById("social" + id);
+            var allMenus = document.querySelectorAll(".social-links");
+
+            // Sembunyikan semua menu terlebih dahulu
+            allMenus.forEach(menu => {
+                if (menu.id !== "social" + id) {
+                    menu.style.display = "none";
+                }
+            });
+
+            // Toggle tampilan menu yang diklik
+            if (socialMenu.style.display === "none" || socialMenu.style.display === "") {
+                socialMenu.style.display = "block";
+            } else {
+                socialMenu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
