@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Konfigurasi API Key (simpan di Environment Variables Azure)
-API_KEY = os.getenv("OWM_API_KEY", "5a4b2c3d1e6f7g8h9i0j1k2l3m4n5o6p")  # Gunakan environment variable di Azure
+API_KEY = os.getenv("OWM_API_KEY", "a90346e87e9508d1d91e71de81259971")  # Gunakan environment variable di Azure
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 @app.route('/')
