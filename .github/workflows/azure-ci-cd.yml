@@ -1,7 +1,7 @@
 - name: Deploy to Azure
   uses: azure/webapps-deploy@v2
   with:
-    app-name: 'your-app-name'
+    app-name: 'weatherprojek'
     publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
     package: .  # Deploy seluruh folder
     # atau tentukan folder spesifik:
