@@ -1,0 +1,5 @@
+[oryx]
+# Tentukan folder output build
+build_artifact_folder = "output"
+# Untuk Python
+app_artifact_directory = "."
